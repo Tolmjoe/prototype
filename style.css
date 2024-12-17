@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 body {
   background: url("image/back.png") no-repeat;
   background-size: cover;
@@ -78,9 +81,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
+
 
 .logo {
   border-radius: 15px;
@@ -91,7 +92,7 @@ a {
   background-color: #000000;
   height: 100px;
   width: 200px;
-  border: 1px solid red;
+  border: 1px solid whitesmoke;
   border-radius: 10px;
   padding: 10px;
   margin-right: 70px;
@@ -125,7 +126,7 @@ a {
 .serdrop {
   height: 100px;
   width: 200px;
-  border: 1px solid red;
+  border: 1px solid whitesmoke;
   border-radius: 10px;
   padding: 10px;
   color: rgb(255, 255, 255);
