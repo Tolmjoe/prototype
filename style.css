@@ -3,30 +3,34 @@
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 body {
-  background: url("image/back.png") no-repeat;
+  background: url("image/back.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
 .body1 {
-  background-color: #00000080;
+  background-color: rgba(103, 90, 70, 0.63);
   height: 400px;
   margin-top: 8px;
 }
 .body2 {
-  background-color: #000000e7;
+  background-color: #020100e2;
   height: 400px;
   margin-top: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.body2:hover {
+  background-color: #181614ec;
 }
 
 .body3 {
@@ -61,14 +65,14 @@ body {
 }
 
 .welcome {
-  background: linear-gradient(rgba(0, 200, 255, 0.441), #ffffff);
+  background: linear-gradient(#8fd71d, #fcfcfc);
   background-clip: text;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   margin-top: 90px;
   color: transparent;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .nav {
@@ -80,8 +84,6 @@ body {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-
 
 .logo {
   border-radius: 15px;
@@ -100,7 +102,7 @@ body {
 }
 
 .regbut {
-  background-color: rgba(82, 82, 188, 0.105);
+  background-color: rgba(82, 188, 84, 0.32);
   width: 110px;
   border: 1px solid rgba(9, 0, 0, 0.557);
   border-radius: 15px;
@@ -146,7 +148,7 @@ body {
 }
 
 li a:hover {
-  background-color: #e64d6770;
+  background-color: #487603;
   color: #ffffff;
   border: 1px solid black;
 }
@@ -208,12 +210,12 @@ li a:hover {
 .services-list li {
   margin: 10px;
   font-size: 24px;
-  color: #97c9dbb7;
+  color: rgb(247, 246, 245);
   transition: 0.2s;
 }
 
 .services-list li:hover {
-font-size: 26px;
+  font-size: 26px;
 }
 
 /*About*/
