@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+body,
+html {
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -112,7 +119,8 @@ body {
   display: inline-block;
 }
 
-.regbut:visited {
+.regbut:visited,
+.regbutx:visited {
   color: rgba(255, 255, 255, 0.847);
 }
 
@@ -121,7 +129,8 @@ body {
   background-color: #b7a09233;
   width: 111px;
 }
-.regbut:active {
+.regbut:active,
+.regbutx:active {
   background-color: #ff000029;
 }
 
@@ -579,4 +588,298 @@ input[type="password"]:hover {
 .si,
 .housebut {
   margin-bottom: 20px;
+}
+
+/* Responsive argument */
+.bodyx {
+  display: none;
+  margin: 7px;
+  font-size: 12px;
+}
+
+@media (max-width: 499px) {
+  .logo {
+    width: 55px !important;
+    height: 55px !important;
+    margin: 2px;
+  }
+  .logoname {
+    font-size: 0.9em;
+    flex-basis: 90% !important;
+    margin: 0;
+  }
+  .loginbut {
+    margin: 3px;
+  }
+  .serbut {
+    margin-right: 5px;
+  }
+  .body1 {
+    height: 70px;
+  }
+  .welcome {
+    display: none;
+  }
+  .bodyx {
+    display: block;
+    font-size: 18px;
+  }
+  .regbutx {
+    background-color: rgba(82, 188, 84, 0.32);
+    width: 70px;
+    border: 1px solid rgba(9, 0, 0, 0.557);
+    border-radius: 5px;
+    padding: 5px;
+    color: #000000;
+    transition: width 0.1s;
+    display: inline-block;
+  }
+
+  .services-list li {
+    font-size: 20px;
+  }
+  .services-list li:hover {
+    font-size: 22px;
+  }
+  .foot {
+    height: 600px;
+    margin-top: 8px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  label {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+
+  .fb {
+    background-color: #000000;
+    margin-top: 220px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .formbody2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .signinbutton {
+    background-color: #ff33004a;
+    border: 1px solid #ffffff8f;
+    padding: 15px;
+    border-radius: 9px;
+    width: 110px;
+    font-size: 21px;
+    color: wheat;
+  }
+
+  .housebut {
+    display: flex;
+    justify-content: center;
+  }
+
+  .si,
+  .housebut {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+
+  input[type="password"],
+  input[type="date"],
+  select {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  .wed {
+    font-size: 19px;
+    width: 200px !important;
+  }
+
+  .signbutton {
+    background-color: #d72d8222;
+    padding: 11px;
+    outline: none;
+    border: 2px solid #4403483e;
+    border-radius: 7px;
+    width: 200px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+
+  .signupform {
+    width: 93%;
+    height: 100%;
+    border: 3px solid #0000004e;
+    border-radius: 19px;
+    padding: 29px;
+    margin: 40px;
+    background-color: transparent;
+  }
+  input[placeholder] {
+    font-size: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .logo {
+    width: 59px !important;
+    height: 59px !important;
+    margin: 2px;
+  }
+  .logoname {
+    font-size: 1em;
+    flex-basis: 90% !important;
+    margin: 0;
+  }
+  .loginbut {
+    margin: 3px;
+    padding: 15px;
+    font-size: 19px;
+  }
+  .serbut {
+    margin-right: 5px;
+  }
+  .serdrop {
+    padding: 15px;
+    font-size: 19px;
+  }
+  .body1 {
+    height: 70px;
+  }
+  .welcome {
+    display: none;
+  }
+  .bodyx {
+    display: block;
+    height: 70px;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #00000038;
+    width: 100%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  .regbutx {
+    background-color: rgba(82, 188, 84, 0.32);
+    width: 100px;
+    border: 1px solid rgba(9, 0, 0, 0.557);
+    border-radius: 5px;
+    padding: 7px;
+    color: #000000;
+    transition: width 0.1s;
+    display: inline-block;
+  }
+
+  .services-list li {
+    font-size: 23px;
+  }
+  .services-list li:hover {
+    font-size: 25px;
+  }
+  .foot {
+    height: 600px;
+    margin-top: 8px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  label {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+
+  .fb {
+    background-color: #000000;
+    margin-top: 220px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .signinbutton {
+    background-color: #ff33004a;
+    border: 1px solid #ffffff8f;
+    padding: 10px;
+    border-radius: 9px;
+    width: 110px;
+    color: wheat;
+  }
+
+  .si,
+  .housebut {
+    margin-bottom: 20px;
+    width: 400px;
+  }
+  input[type="password"],
+  input[type="date"],
+  select {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  .wed {
+    font-size: 19px;
+    width: 200px !important;
+  }
+
+  .signbutton {
+    background-color: #d72d8222;
+    padding: 11px;
+    outline: none;
+    border: 2px solid #4403483e;
+    border-radius: 7px;
+    width: 200px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+
+  .signupform {
+    width: 93%;
+    height: 100%;
+    border: 3px solid #0000004e;
+    border-radius: 19px;
+    padding: 29px;
+    margin: 40px;
+    background-color: transparent;
+  }
+  input[placeholder] {
+    font-size: 25px;
+  }
 }
