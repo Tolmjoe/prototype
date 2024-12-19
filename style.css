@@ -23,6 +23,10 @@ body {
   color: white;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .body1 {
   background-color: rgba(21, 20, 20, 0.975);
   height: auto;
@@ -131,6 +135,7 @@ body {
   color: #000000;
   transition: width 0.1s;
   display: inline-block;
+  margin-bottom: 20px;
 
 }
 

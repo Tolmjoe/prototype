@@ -45,11 +45,11 @@
   }
 
   .foot {
-    height: 600px;
+    height: 600px !important;
     margin-top: 8px;
     padding: 35px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: space-around;
   }
 
@@ -199,11 +199,11 @@
   }
 
   .foot {
-    height: 600px;
+    height: 600px !important;
     margin-top: 8px;
     padding: 35px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: space-around;
   }
 
