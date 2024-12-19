@@ -10,30 +10,34 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 body {
-  background: url("image/back.jpg") no-repeat;
+  background: url("image/logo.webp") no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
 }
 
 .body1 {
-  background-color: rgba(103, 90, 70, 0.63);
-  height: 400px;
+  background-color: rgba(21, 20, 20, 0.975);
+  height: auto;
   margin-top: 8px;
 }
+
 .body2 {
-  background-color: #020100e2;
+  background-color: #020100aa;
   height: 400px;
-  margin-top: 8px;
+  margin-top: 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .body2:hover {
@@ -67,6 +71,7 @@ body {
 .wat:hover {
   background-color: #00bbff64;
 }
+
 .dow:hover {
   background-color: #b5444447;
 }
@@ -77,8 +82,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  margin-top: 90px;
-  color: transparent;
+  /* color: transparent; */
   font-size: 22px;
 }
 
@@ -87,9 +91,19 @@ body {
 }
 
 .logoname {
-  margin-left: 10px;
-  color: white;
+
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logosection {
+  position: relative;
+}
+
+.logosection img {
+  position: absolute;
+  left: 3rem;
+  top: -6px;
+  ;
 }
 
 .logo {
@@ -109,7 +123,7 @@ body {
 }
 
 .regbut {
-  background-color: rgba(82, 188, 84, 0.32);
+  background-color:orange;
   width: 110px;
   border: 1px solid rgba(9, 0, 0, 0.557);
   border-radius: 15px;
@@ -117,6 +131,7 @@ body {
   color: #000000;
   transition: width 0.1s;
   display: inline-block;
+
 }
 
 .regbut:visited,
@@ -126,9 +141,10 @@ body {
 
 .regbut:hover {
   color: rgb(255, 255, 255);
-  background-color: #b7a09233;
+  background-color: black;
   width: 111px;
 }
+
 .regbut:active,
 .regbutx:active {
   background-color: #ff000029;
@@ -146,9 +162,17 @@ body {
 
 .navbar {
   display: flex;
-  list-style-type: none;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.navbarulist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5px;
 }
 
 .serbut {
@@ -271,119 +295,6 @@ li a:hover {
   color: #000000;
   text-align: justify;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.bouncing-balls {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.ball {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 3px solid #bfa10d28;
-  position: absolute;
-  background-color: #bfa10dcc;
-  opacity: 0.9;
-  animation: bounce 5s infinite linear;
-}
-
-.ball1 {
-  left: 20%;
-  animation-delay: 0s;
-}
-
-.ball2 {
-  left: 90%;
-  background-color: #641c1c84;
-  animation-delay: 0.2s;
-  border: 3px solid #2b3d4319;
-}
-
-.ball3 {
-  left: 80%;
-  background-color: #0211169d;
-  animation-delay: 0.3s;
-  border: 3px solid #2b3d4324;
-}
-
-.ball3:hover {
-  background-color: #ff8800;
-}
-.ball2:hover {
-  background-color: #ff0099;
-}
-.ball1:hover {
-  background-color: #00bbff;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  5% {
-    transform: translateY(520px);
-  }
-  10% {
-    transform: translateY(250px);
-  }
-  15% {
-    transform: translateY(520px);
-  }
-  20% {
-    transform: translateY(350px);
-  }
-  30% {
-    transform: translateY(520px);
-  }
-  40% {
-    transform: translateY(420px);
-  }
-  50% {
-    transform: translateY(520px);
-  }
-  60% {
-    transform: translateY(500px);
-  }
-  70% {
-    transform: translateY(520px);
-  }
-  80% {
-    transform: translateY(510px);
-  }
-  82% {
-    transform: translateY(530px);
-  }
-  84% {
-    transform: translateY(540px);
-  }
-  86% {
-    transform: translateY(550px);
-  }
-  88% {
-    transform: translateY(560px);
-  }
-  90% {
-    transform: translateY(570px);
-  }
-  92% {
-    transform: translateY(580px);
-  }
-  94% {
-    transform: translateY(600px);
-  }
-  96% {
-    transform: translateY(674px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 /*Register page*/
@@ -588,298 +499,4 @@ input[type="password"]:hover {
 .si,
 .housebut {
   margin-bottom: 20px;
-}
-
-/* Responsive argument */
-.bodyx {
-  display: none;
-  margin: 7px;
-  font-size: 12px;
-}
-
-@media (max-width: 499px) {
-  .logo {
-    width: 55px !important;
-    height: 55px !important;
-    margin: 2px;
-  }
-  .logoname {
-    font-size: 0.9em;
-    flex-basis: 90% !important;
-    margin: 0;
-  }
-  .loginbut {
-    margin: 3px;
-  }
-  .serbut {
-    margin-right: 5px;
-  }
-  .body1 {
-    height: 70px;
-  }
-  .welcome {
-    display: none;
-  }
-  .bodyx {
-    display: block;
-    font-size: 18px;
-  }
-  .regbutx {
-    background-color: rgba(82, 188, 84, 0.32);
-    width: 70px;
-    border: 1px solid rgba(9, 0, 0, 0.557);
-    border-radius: 5px;
-    padding: 5px;
-    color: #000000;
-    transition: width 0.1s;
-    display: inline-block;
-  }
-
-  .services-list li {
-    font-size: 20px;
-  }
-  .services-list li:hover {
-    font-size: 22px;
-  }
-  .foot {
-    height: 600px;
-    margin-top: 8px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  label {
-    font-size: 1.7rem;
-    margin-bottom: 5px;
-    display: block;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-  }
-
-  .fb {
-    background-color: #000000;
-    margin-top: 220px;
-    height: 100%;
-    margin: 0;
-  }
-
-  .formbody2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .signinbutton {
-    background-color: #ff33004a;
-    border: 1px solid #ffffff8f;
-    padding: 15px;
-    border-radius: 9px;
-    width: 110px;
-    font-size: 21px;
-    color: wheat;
-  }
-
-  .housebut {
-    display: flex;
-    justify-content: center;
-  }
-
-  .si,
-  .housebut {
-    margin-bottom: 20px;
-    width: 300px;
-  }
-
-  input[type="password"],
-  input[type="date"],
-  select {
-    height: 40px;
-    width: 100%;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-  }
-
-  .wed {
-    font-size: 19px;
-    width: 200px !important;
-  }
-
-  .signbutton {
-    background-color: #d72d8222;
-    padding: 11px;
-    outline: none;
-    border: 2px solid #4403483e;
-    border-radius: 7px;
-    width: 200px;
-    font-weight: 900;
-    color: #ffffff;
-  }
-
-  .signupform {
-    width: 93%;
-    height: 100%;
-    border: 3px solid #0000004e;
-    border-radius: 19px;
-    padding: 29px;
-    margin: 40px;
-    background-color: transparent;
-  }
-  input[placeholder] {
-    font-size: 20px;
-  }
-}
-@media (min-width: 500px) and (max-width: 1000px) {
-  .logo {
-    width: 59px !important;
-    height: 59px !important;
-    margin: 2px;
-  }
-  .logoname {
-    font-size: 1em;
-    flex-basis: 90% !important;
-    margin: 0;
-  }
-  .loginbut {
-    margin: 3px;
-    padding: 15px;
-    font-size: 19px;
-  }
-  .serbut {
-    margin-right: 5px;
-  }
-  .serdrop {
-    padding: 15px;
-    font-size: 19px;
-  }
-  .body1 {
-    height: 70px;
-  }
-  .welcome {
-    display: none;
-  }
-  .bodyx {
-    display: block;
-    height: 70px;
-    align-items: center;
-    color: whitesmoke;
-    background-color: #00000038;
-    width: 100%;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 22px;
-  }
-  .regbutx {
-    background-color: rgba(82, 188, 84, 0.32);
-    width: 100px;
-    border: 1px solid rgba(9, 0, 0, 0.557);
-    border-radius: 5px;
-    padding: 7px;
-    color: #000000;
-    transition: width 0.1s;
-    display: inline-block;
-  }
-
-  .services-list li {
-    font-size: 23px;
-  }
-  .services-list li:hover {
-    font-size: 25px;
-  }
-  .foot {
-    height: 600px;
-    margin-top: 8px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  label {
-    font-size: 1.7rem;
-    margin-bottom: 5px;
-    display: block;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-  }
-
-  .fb {
-    background-color: #000000;
-    margin-top: 220px;
-    height: 100%;
-    margin: 0;
-  }
-
-  .signinbutton {
-    background-color: #ff33004a;
-    border: 1px solid #ffffff8f;
-    padding: 10px;
-    border-radius: 9px;
-    width: 110px;
-    color: wheat;
-  }
-
-  .si,
-  .housebut {
-    margin-bottom: 20px;
-    width: 400px;
-  }
-  input[type="password"],
-  input[type="date"],
-  select {
-    height: 40px;
-    width: 100%;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-  }
-
-  .wed {
-    font-size: 19px;
-    width: 200px !important;
-  }
-
-  .signbutton {
-    background-color: #d72d8222;
-    padding: 11px;
-    outline: none;
-    border: 2px solid #4403483e;
-    border-radius: 7px;
-    width: 200px;
-    font-weight: 900;
-    color: #ffffff;
-  }
-
-  .signupform {
-    width: 93%;
-    height: 100%;
-    border: 3px solid #0000004e;
-    border-radius: 19px;
-    padding: 29px;
-    margin: 40px;
-    background-color: transparent;
-  }
-  input[placeholder] {
-    font-size: 25px;
-  }
 }
