@@ -28,9 +28,8 @@ ul {
 }
 
 .body1 {
-  background-color: rgba(21, 20, 20, 0.975);
+  background-color: rgba(5, 5, 5, 0.792);
   height: auto;
-  margin-top: 8px;
 }
 
 .body2 {
@@ -105,8 +104,8 @@ ul {
 
 .logosection img {
   position: absolute;
-  left: 3rem;
-  top: -6px;
+  left: 11rem;
+  top: 5px;
   ;
 }
 
@@ -260,7 +259,7 @@ li a:hover {
 .about-body {
   font-family: Arial, sans-serif;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -269,13 +268,16 @@ li a:hover {
 }
 
 .about-container {
+
+  
   text-align: center;
   background: #f9f9f990;
-  padding: 40px;
+ padding: 10px;
   border-radius: 10px;
   box-shadow: 4px 4px 18px #2a080165, 4px 4px 8px #ff7b006d,
     4px 4px 13px #00ff3c4f;
   max-width: 600px;
+  height: 100vh;
   z-index: 1;
   position: relative;
 }
@@ -294,6 +296,7 @@ li a:hover {
 }
 
 .about-container p {
+  padding: 2px;
   font-size: 1.2rem;
   margin-bottom: 15px;
   line-height: 1.6;

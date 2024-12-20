@@ -36,7 +36,8 @@
 
 .gallery::after,
 .gallery > img {
-  animation: m 8s infinite cubic-bezier(0.5, -0.2, 0.5, 1.2);
+  /* animation: m 8s infinite cubic-bezier(0.5, -0.2, 0.5, 1.2); */
+  animation: m 8s infinite cubic-bezier(0.5, -0.2, 0.5,1.2);
 }
 
 .gallery > img:nth-child(2) {
@@ -60,7 +61,7 @@
   animation-delay: -12s;
 }
 
-@keyframes m {
+@keyframes m{
   0%,
   3% {
     transform: rotate(0);
