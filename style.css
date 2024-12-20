@@ -391,6 +391,7 @@ input[type="date"]:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #000000da;
 }
 
 .signupform {
@@ -404,7 +405,7 @@ input[type="date"]:hover {
 }
 
 .signupform:hover {
-  background-color: #0000009b;
+  background-color: rgba(210, 180, 140, 0.628);
 }
 
 /* Error message on signup forms styling*/
@@ -467,7 +468,7 @@ textarea {
 
 .fb {
   background-color: #000000;
-  margin-top: 220px;
+  margin-top: 0;
 }
 
 .formbody2 {
@@ -475,6 +476,7 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #000000da;
 }
 
 .signinform input:hover,
@@ -504,4 +506,18 @@ input[type="password"]:hover {
 .si,
 .housebut {
   margin-bottom: 20px;
+}
+
+.return {
+  background-color: rgba(204, 156, 93, 0.685);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.ret {
+  font-size: 51px;
+  color: rgba(0, 0, 0, 0.584);
+  font-weight: bold;
+  margin-left: 10px;
+  
 }
