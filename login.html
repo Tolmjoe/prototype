@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="@media.css" />
 
     <title>Sign In</title>
   </head>
   <body class="fb">
-    <div class="return"><a title="Go back to Homepage." class="ret" href="index.html"><<<</a></div>
+    <div class="return">
+      <a title="Go back to the Homepage." class="ret" href="index.html">🏚️</a>
+    </div>
     <div class="formbody2">
       <form class="signinform" method="POST">
         <div class="si">
           <label for="em">Email</label>
-          <input type="email" name="" id="em" />
+          <input required type="email" name="" id="em" />
         </div>
         <div class="si">
           <label for="pwd">Password</label>
-          <input type="password" name="" id="pwd" />
+          <input required type="password" name="" id="pwd" />
         </div>
         <div class="housebut">
           <button class="signinbutton" type="submit"><b>Sign in</b></button>
+        </div>
+        <div class="inup">
+          You don't have an account?
+          <a class="linkinup" href="register.html">Register here</a>
         </div>
       </form>
     </div>

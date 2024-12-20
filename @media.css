@@ -1,6 +1,4 @@
 @media (max-width: 499px) {
-
-
   .navbarulist ul {
     width: 5rem;
   }
@@ -19,9 +17,7 @@
     font-size: 0.9em;
     flex-basis: 90% !important;
     margin: 0;
-
   }
-
 
   .loginbut {
     margin: 3px;
@@ -34,8 +30,6 @@
   .body1 {
     height: 40vh;
   }
-
-
 
   .services-list li {
     font-size: 20px;
@@ -148,16 +142,12 @@
 @media (min-width: 500px) and (max-width: 1000px) {
   .navbarulist ul {
     width: 5rem;
-
   }
 
   .acktabytes {
     font-size: 1.5rem !important;
   }
 
-
-
- 
   .logo {
     width: 59px !important;
     height: 59px !important;
@@ -188,11 +178,6 @@
   .body1 {
     height: 70px;
   }
-
-
-
-
-
 
   .services-list li {
     font-size: 23px;
@@ -290,8 +275,6 @@
   }
 }
 
-
-
 /* .logosection img {
   position: absolute;
   left: 11rem;
@@ -300,16 +283,8 @@
 } */
 
 @media (max-width: 1000px) {
-
   .logosection img {
     position: absolute;
     left: 8.8rem !important;
-  
-    ;
   }
-  
-  
-
-
- 
 }
