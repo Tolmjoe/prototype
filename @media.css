@@ -155,6 +155,9 @@
     font-size: 1.5rem !important;
   }
 
+
+
+ 
   .logo {
     width: 59px !important;
     height: 59px !important;
@@ -285,4 +288,28 @@
   input[placeholder] {
     font-size: 25px;
   }
+}
+
+
+
+/* .logosection img {
+  position: absolute;
+  left: 11rem;
+  top: 5px;
+  ;
+} */
+
+@media (max-width: 1000px) {
+
+  .logosection img {
+    position: absolute;
+    left: 8.8rem !important;
+  
+    ;
+  }
+  
+  
+
+
+ 
 }
