@@ -15,6 +15,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .acktabytes,
 .logosection {
   user-select: none;
@@ -33,8 +34,16 @@ ul {
 
 .body1 {
   background-color: rgba(12, 11, 11, 0.792);
-  height: auto;
+  height: 30vh;
 }
+
+.welcomemessage{
+
+margin-top: 10px;
+padding: 2px;
+
+}
+
 
 .body2 {
   background-color: #020100aa;
@@ -63,7 +72,7 @@ ul {
 
 .bdbut {
   display: inline-block;
-  margin-top: 90px;
+  margin-top: 40px;
   padding: 14px;
   background-color: #b54444e0;
   border-radius: 17px;
@@ -128,15 +137,18 @@ ul {
 }
 
 .regbut {
-  background-color: black;
-  width: 110px;
-  border: 1px solid rgba(9, 0, 0, 0.557);
-  border-radius: 15px;
-  padding: 10px;
+  background-color: rgba(0, 100, 0, 0.826);
+  width: 200px;
   color: white;
   transition: width 0.1s;
-  display: inline-block;
-  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 17px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-top: 2em;
+
 }
 
 .regbut:visited,
@@ -146,7 +158,7 @@ ul {
 
 .regbut:hover {
   color: rgb(255, 255, 255);
-  background-color: crimson;
+  background-color: rgba(0, 100, 0, 0.4);
   width: 111px;
 }
 
@@ -371,19 +383,20 @@ input[type="date"]:hover {
   align-items: center;
 }
 
-.signbutton {
-  background-color: #d72d8222;
+.signinbutton {
+
   padding: 11px;
   outline: none;
-  border: 2px solid #4403483e;
+  border: 2px solid white;
   border-radius: 7px;
   width: 200px;
   font-weight: 900;
-  color: #ffffff;
+  background-color: black !important;
+  cursor: pointer;
 }
 
-.signbutton:hover {
-  background-color: #d72d820d;
+.signinbutton:hover {
+  background-color: red !important;
   border-radius: 17px;
   transition: 0.1s linear;
 }
@@ -516,26 +529,32 @@ input[type="password"]:hover {
   display: flex;
   align-items: center;
 }
+
 .ret {
   font-size: 48px;
   color: rgba(0, 0, 0, 0.584);
   font-weight: bold;
   margin-left: 10px;
 }
+
 .inup {
   text-align: center;
 }
+
 .reg {
   background-color: rgba(0, 0, 0, 0.804);
   text-align: right;
   padding-right: 20px;
 }
+
 .linkinup {
   color: tan;
 }
+
 .linkinup:visited {
   color: rgb(145, 145, 5);
 }
+
 .linkinup:hover {
   color: red;
 }
