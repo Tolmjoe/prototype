@@ -22,8 +22,9 @@ a {
 }
 
 body {
-  background: url("../image/logo.webp") no-repeat;
+  background: url("../image/logo.jpg") no-repeat;
   background-size: cover;
+  width: 100%;
   background-position: center;
   color: white;
 }
@@ -33,22 +34,18 @@ ul {
 }
 
 .body1 {
-  background-color:rgba(0, 0, 0, 0.945);
- 
+  background-color: #000000e5;
   height: 35vh;
 }
 
 .welcomemessage {
-
   margin-top: 10px;
   padding: 2px;
-
 }
 
-
 .body2 {
-  background-color:rgba(0, 0, 0, 0.847);
- 
+  background-color: rgba(0, 0, 0, 0);
+
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -145,7 +142,6 @@ ul {
   align-items: center;
   justify-content: center;
   margin-top: 2em;
-
 }
 
 .regbut:visited,
@@ -271,27 +267,34 @@ li a:hover {
   height: 100vh;
   overflow: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(45deg, #000000a3, #641c1c5a, #0211166f);
+  background: url("/image/back.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about-container {
   text-align: center;
-  background: #f9f9f990;
+  background-color: #ece5e58a;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 4px 4px 18px #2a080165, 4px 4px 8px #ff7b006d,
-    4px 4px 13px #00ff3c4f;
+    4px 4px 13px #025f1853;
   max-width: 600px;
-  height: 100vh;
+  height: 80vh;
   z-index: 1;
   position: relative;
 }
 
+
 .about-container:hover {
-  background: #00000050;
+  background: rgba(249, 249, 248, 0.9);
+}
+.ab {
+  background-color: transparent !important;
 }
 
 .about-container h1 {
@@ -381,7 +384,6 @@ input[type="date"]:hover {
 }
 
 .signinbutton {
-
   padding: 11px;
   outline: none;
   border: 2px solid white;

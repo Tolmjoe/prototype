@@ -137,6 +137,9 @@
   input[placeholder] {
     font-size: 20px;
   }
+  .about-container {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
