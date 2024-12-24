@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.dkmode {
+  background-color: rgba(0, 0, 0, 0.836) !important;
+  border: none !important;
+}
+
 body,
 html {
   max-width: 100%;
@@ -22,9 +27,8 @@ a {
 }
 
 body {
-  background: url("../image/logo.jpg") no-repeat;
+  background: url("../image/logo.png") no-repeat;
   background-size: cover;
-  width: 100%;
   background-position: center;
   color: white;
 }
@@ -32,20 +36,35 @@ body {
 ul {
   list-style-type: none;
 }
+.blogot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logot {
+  width: 111px;
+  height: 111px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 9px;
+}
 
 .body1 {
-  background-color: #000000e5;
-  height: 35vh;
+  background-color: #654d39ba;
+  height: 15vh;
 }
 
 .welcomemessage {
-  margin-top: 10px;
-  padding: 2px;
+  margin-top: 30px;
+  border: 3px solid #4c3b2dec;
+  padding: 5px;
+  height: 30vh;
+  background-color: #4c3b2dec;
 }
 
 .body2 {
-  background-color: rgba(0, 0, 0, 0);
-
+  background-color: #00000000;
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -55,7 +74,7 @@ ul {
 }
 
 .body3 {
-  background-color: #000000a9;
+  background-color: #654d39ba;
   height: 400px;
   margin-top: 8px;
   display: flex;
@@ -68,22 +87,22 @@ ul {
   display: inline-block;
   margin-top: 40px;
   padding: 14px;
-  background-color: #b54444e0;
+  background-color: #b84141f3;
   border-radius: 17px;
   border: 1px solid transparent;
   color: rgba(255, 255, 255, 0.772);
 }
 
 .wat {
-  background-color: #00bbff;
+  background-color: #5eadc9c7;
 }
 
 .wat:hover {
-  background-color: #00bbff64;
+  background-color: #00bbffec;
 }
 
 .dow:hover {
-  background-color: #b5444447;
+  background-color: #590909ef;
 }
 
 .welcome {
@@ -120,10 +139,10 @@ ul {
 }
 
 .loginbut {
-  background-color: #000000;
+  background-color: #4c2b2bc8;
   height: 100px;
   width: 200px;
-  border: 1px solid whitesmoke;
+  border: 2px solid #563131e4;
   border-radius: 10px;
   padding: 10px;
   margin-right: 70px;
@@ -131,7 +150,7 @@ ul {
 }
 
 .regbut {
-  background-color: rgba(0, 100, 0, 0.826);
+  background-color: #396546c4;
   width: 201px;
   color: white;
   transition: width 0.1s;
@@ -151,8 +170,7 @@ ul {
 
 .regbut:hover {
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 100, 0, 0.4);
-  width: 111px;
+  background-color: rgba(0, 100, 0, 0.792);
 }
 
 .regbut:active,
@@ -163,11 +181,11 @@ ul {
 .serdrop {
   height: 100px;
   width: 200px;
-  border: 1px solid whitesmoke;
+  border: 2px solid #563131;
   border-radius: 10px;
   padding: 10px;
   color: rgb(255, 255, 255);
-  background-color: #020100;
+  background-color: #4c2b2bc8;
 }
 
 .navbar {
@@ -186,18 +204,18 @@ ul {
 }
 
 .serbut {
-  color: black;
+  color: #653939ba;
   user-select: none;
 }
 
 li a:hover {
-  background-color: #487603;
+  background-color: #a52a2a85;
   color: #ffffff;
-  border: 1px solid black;
+  border: 2px solid #a52a2a35;
 }
 
 .serbut:hover .drop {
-  background-color: #000000a9;
+  background-color: #653939e1;
   color: #ffffff;
 }
 
@@ -231,7 +249,7 @@ li a:hover {
 }
 
 .foot {
-  background-color: #000000;
+  background-color: #654d39;
   height: 200px;
   margin-top: 8px;
   color: #ffffff;
@@ -288,7 +306,6 @@ li a:hover {
   z-index: 1;
   position: relative;
 }
-
 
 .about-container:hover {
   background: rgba(249, 249, 248, 0.9);
@@ -556,4 +573,13 @@ input[type="password"]:hover {
 
 .linkinup:hover {
   color: red;
+}
+
+#dkmodebutton {
+  padding: 8px;
+  background-color: #6a4e3083;
+  color: white;
+  border: 2px solid #6a4e3083;
+  border-radius: 7px;
+  margin-left: 7px;
 }
