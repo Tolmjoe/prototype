@@ -8,7 +8,7 @@ $(window).on("load", function () {
 
     $("#femi").toggle(1000, function () {
       setTimeout(() => {
-        callnext();
+        // callnext();
       }, 100);
     });
   });

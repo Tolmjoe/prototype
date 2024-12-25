@@ -1,6 +1,7 @@
 @media (max-width: 499px) {
   body {
-    background: url("/image/logom.png") no-repeat !important;
+    /* background: url("/image/logom.png") no-repeat !important; */
+    background: url("../image/logom.png") no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
   }
