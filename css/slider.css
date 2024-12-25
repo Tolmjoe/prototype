@@ -19,7 +19,7 @@
   inset: 0;
   padding: inherit;
   border-radius: inherit;
-  background: repeating-conic-gradient(#789048 0 30deg, #dfba69 0 60deg);
+  background: repeating-conic-gradient(rgba(19, 18, 18, 0.733) 0 30deg, #dfba69e8 0 60deg);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
