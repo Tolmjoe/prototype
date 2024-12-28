@@ -5,6 +5,13 @@
     background-size: cover !important;
     background-position: center !important;
   }
+
+  .welcomemessage {
+    
+    height: 25vh;
+    
+  }
+  
   .navbarulist ul {
     width: 5rem;
     margin-right: 5px;
@@ -151,6 +158,12 @@
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
+
+  .welcomemessage {
+    
+    height: 25vh;
+    
+  }
   .navbarulist ul {
     width: 5rem;
     margin-right: 10px;
